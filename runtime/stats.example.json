@@ -1,0 +1,1188 @@
+{
+  "updatedAt": "2026-11-25T17:05:00+01:00",
+  "tasks": [
+    {
+      "ID": 1,
+      "Name": "Implement authentication",
+      "Status": "InProgress",
+      "StartedAt": "2026-11-25T17:05:00+01:00",
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 2,
+      "Name": "Implement user profile",
+      "Status": "InProgress",
+      "StartedAt": "2026-11-25T17:12:00+01:00",
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 3,
+      "Name": "Implement dashboard",
+      "Status": "InProgress",
+      "StartedAt": "2026-11-25T16:48:00+01:00",
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 4,
+      "Name": "Implement notifications",
+      "Status": "InProgress",
+      "StartedAt": "2026-11-25T17:20:00+01:00",
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 5,
+      "Name": "Implement search",
+      "Status": "InProgress",
+      "StartedAt": "2026-11-25T16:55:00+01:00",
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 6,
+      "Name": "Implement reporting",
+      "Status": "InProgress",
+      "StartedAt": "2026-11-25T17:28:00+01:00",
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 7,
+      "Name": "Implement settings",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 8,
+      "Name": "Implement permissions",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 9,
+      "Name": "Implement data import",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 10,
+      "Name": "Implement data export",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 11,
+      "Name": "Implement audit log",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 12,
+      "Name": "Implement api gateway",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 13,
+      "Name": "Implement billing",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 14,
+      "Name": "Implement task management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 15,
+      "Name": "Implement agent management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 16,
+      "Name": "Implement file storage",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 17,
+      "Name": "Implement analytics",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 18,
+      "Name": "Implement localization",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 19,
+      "Name": "Implement accessibility",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 20,
+      "Name": "Implement session management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 21,
+      "Name": "Implement system health",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 22,
+      "Name": "Write unit tests for authentication",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 23,
+      "Name": "Write unit tests for user profile",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 24,
+      "Name": "Write unit tests for dashboard",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 25,
+      "Name": "Write unit tests for notifications",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 26,
+      "Name": "Write unit tests for search",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 27,
+      "Name": "Write unit tests for reporting",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 28,
+      "Name": "Write unit tests for settings",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 29,
+      "Name": "Write unit tests for permissions",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 30,
+      "Name": "Write unit tests for data import",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 31,
+      "Name": "Write unit tests for data export",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 32,
+      "Name": "Write unit tests for audit log",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 33,
+      "Name": "Write unit tests for api gateway",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 34,
+      "Name": "Write unit tests for billing",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 35,
+      "Name": "Write unit tests for task management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 36,
+      "Name": "Write unit tests for agent management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 37,
+      "Name": "Write unit tests for file storage",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 38,
+      "Name": "Write unit tests for analytics",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 39,
+      "Name": "Write unit tests for localization",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 40,
+      "Name": "Write unit tests for accessibility",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 41,
+      "Name": "Write unit tests for session management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 42,
+      "Name": "Write unit tests for system health",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 43,
+      "Name": "Validate error handling for authentication",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 44,
+      "Name": "Validate error handling for user profile",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 45,
+      "Name": "Validate error handling for dashboard",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 46,
+      "Name": "Validate error handling for notifications",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 47,
+      "Name": "Validate error handling for search",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 48,
+      "Name": "Validate error handling for reporting",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 49,
+      "Name": "Validate error handling for settings",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 50,
+      "Name": "Validate error handling for permissions",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 51,
+      "Name": "Validate error handling for data import",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 52,
+      "Name": "Validate error handling for data export",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 53,
+      "Name": "Validate error handling for audit log",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 54,
+      "Name": "Validate error handling for api gateway",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 55,
+      "Name": "Validate error handling for billing",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 56,
+      "Name": "Validate error handling for task management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 57,
+      "Name": "Validate error handling for agent management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 58,
+      "Name": "Validate error handling for file storage",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 59,
+      "Name": "Validate error handling for analytics",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 60,
+      "Name": "Validate error handling for localization",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 61,
+      "Name": "Validate error handling for accessibility",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 62,
+      "Name": "Validate error handling for session management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 63,
+      "Name": "Validate error handling for system health",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 64,
+      "Name": "Review security of authentication",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 65,
+      "Name": "Review security of user profile",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 66,
+      "Name": "Review security of dashboard",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 67,
+      "Name": "Review security of notifications",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 68,
+      "Name": "Review security of search",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 69,
+      "Name": "Review security of reporting",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 70,
+      "Name": "Review security of settings",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 71,
+      "Name": "Review security of permissions",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 72,
+      "Name": "Review security of data import",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 73,
+      "Name": "Review security of data export",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 74,
+      "Name": "Review security of audit log",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 75,
+      "Name": "Review security of api gateway",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 76,
+      "Name": "Review security of billing",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 77,
+      "Name": "Review security of task management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 78,
+      "Name": "Review security of agent management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 79,
+      "Name": "Review security of file storage",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 80,
+      "Name": "Review security of analytics",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 81,
+      "Name": "Review security of localization",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 82,
+      "Name": "Review security of accessibility",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 83,
+      "Name": "Review security of session management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 84,
+      "Name": "Review security of system health",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 85,
+      "Name": "Document authentication",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 86,
+      "Name": "Document user profile",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 87,
+      "Name": "Document dashboard",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 88,
+      "Name": "Document notifications",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 89,
+      "Name": "Document search",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 90,
+      "Name": "Document reporting",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 91,
+      "Name": "Document settings",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 92,
+      "Name": "Document permissions",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 93,
+      "Name": "Document data import",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 94,
+      "Name": "Document data export",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 95,
+      "Name": "Document audit log",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 96,
+      "Name": "Document api gateway",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 97,
+      "Name": "Document billing",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 98,
+      "Name": "Document task management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 99,
+      "Name": "Document agent management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 100,
+      "Name": "Document file storage",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 101,
+      "Name": "Document analytics",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 102,
+      "Name": "Document localization",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 103,
+      "Name": "Document accessibility",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 104,
+      "Name": "Document session management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 105,
+      "Name": "Document system health",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 106,
+      "Name": "Optimize performance of authentication",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 107,
+      "Name": "Optimize performance of user profile",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 108,
+      "Name": "Optimize performance of dashboard",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 109,
+      "Name": "Optimize performance of notifications",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 110,
+      "Name": "Optimize performance of search",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 111,
+      "Name": "Optimize performance of reporting",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 112,
+      "Name": "Optimize performance of settings",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 113,
+      "Name": "Optimize performance of permissions",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 114,
+      "Name": "Optimize performance of data import",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 115,
+      "Name": "Optimize performance of data export",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 116,
+      "Name": "Optimize performance of audit log",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 117,
+      "Name": "Optimize performance of api gateway",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 118,
+      "Name": "Optimize performance of billing",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 119,
+      "Name": "Optimize performance of task management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 120,
+      "Name": "Optimize performance of agent management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 121,
+      "Name": "Optimize performance of file storage",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 122,
+      "Name": "Optimize performance of analytics",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 123,
+      "Name": "Optimize performance of localization",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 124,
+      "Name": "Optimize performance of accessibility",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 125,
+      "Name": "Optimize performance of session management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 126,
+      "Name": "Optimize performance of system health",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 127,
+      "Name": "Run integration tests for authentication",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 128,
+      "Name": "Run integration tests for user profile",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 129,
+      "Name": "Run integration tests for dashboard",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 130,
+      "Name": "Run integration tests for notifications",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 131,
+      "Name": "Run integration tests for search",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 132,
+      "Name": "Run integration tests for reporting",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 133,
+      "Name": "Run integration tests for settings",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 134,
+      "Name": "Run integration tests for permissions",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 135,
+      "Name": "Run integration tests for data import",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 136,
+      "Name": "Run integration tests for data export",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 137,
+      "Name": "Run integration tests for audit log",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 138,
+      "Name": "Run integration tests for api gateway",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 139,
+      "Name": "Run integration tests for billing",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 140,
+      "Name": "Run integration tests for task management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 141,
+      "Name": "Run integration tests for agent management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    },
+    {
+      "ID": 142,
+      "Name": "Run integration tests for file storage",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Barbara"
+    },
+    {
+      "ID": 143,
+      "Name": "Run integration tests for analytics",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Mietczyslav"
+    },
+    {
+      "ID": 144,
+      "Name": "Run integration tests for localization",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Johnny"
+    },
+    {
+      "ID": 145,
+      "Name": "Run integration tests for accessibility",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Json"
+    },
+    {
+      "ID": 146,
+      "Name": "Run integration tests for session management",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Marco"
+    },
+    {
+      "ID": 147,
+      "Name": "Run integration tests for system health",
+      "Status": "NotStarted",
+      "StartedAt": null,
+      "FinishedAt": null,
+      "Agent": "Maria Carmen"
+    }
+  ],
+  "History": [
+    {
+      "Time": "2026-11-25T17:05:00+01:00",
+      "Done": 0,
+      "Blocked": 0
+    }
+  ]
+}

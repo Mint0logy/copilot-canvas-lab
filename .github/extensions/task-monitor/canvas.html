@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Monitor</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./canvas.js"></script>
+</head>
+<body>
+  <main class="dashboard">
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">WORKSPACE OVERVIEW</p>
+        <h1>Task Monitor</h1>
+      </div>
+      <p id="connection-status" role="status" aria-live="polite">
+        Waiting for worker data...
+      </p>
+    </header>
+
+    <section class="summary-cards" aria-label="Task summary">
+      <article class="stat-card">
+        <h2>Total tasks</h2>
+        <p class="stat-value" id="total-count">--</p>
+      </article>
+      <article class="stat-card">
+        <h2>Done</h2>
+        <p class="stat-value" id="done-count">--</p>
+      </article>
+      <article class="stat-card">
+        <h2>Blocked</h2>
+        <p class="stat-value" id="blocked-count">--</p>
+      </article>
+    </section>
+
+    <section class="chart-grid" aria-label="Task charts">
+      <article class="panel">
+        <h2 id="status-chart-title">Task status</h2>
+        <div id="status-chart" role="img" aria-labelledby="status-chart-title"></div>
+        <ul id="status-legend" aria-label="Task status legend"></ul>
+      </article>
+
+      <article class="panel">
+        <h2 id="history-chart-title">Progress over time</h2>
+        <svg
+          id="history-chart"
+          viewBox="0 0 640 280"
+          role="img"
+          aria-labelledby="history-chart-title"
+        ></svg>
+      </article>
+    </section>
+
+    <section class="panel" aria-labelledby="active-tasks-title">
+      <h2 id="active-tasks-title">In progress and blocked tasks</h2>
+      <p id="action-status" role="status" aria-live="polite"></p>
+      <ul id="active-task-list" aria-live="polite">
+        <li class="empty-state">Waiting for task data...</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

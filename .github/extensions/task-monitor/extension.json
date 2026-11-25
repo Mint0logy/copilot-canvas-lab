@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "initialization": "module",
+  "canvases": [
+    {
+      "id": "copilot-canvas-lab-task-monitor",
+      "displayName": "Task Monitor",
+      "description": "Displays task status and recent progress from the workspace stats file."
+    }
+  ]
+}

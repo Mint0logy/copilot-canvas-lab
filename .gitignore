@@ -1,0 +1,5 @@
+/runtime/stats.json
+/runtime/stats.json.lock
+/runtime/stats.*.tmp
+/runtime/stats.*.bak
+/runtime/.stats.*.tmp
