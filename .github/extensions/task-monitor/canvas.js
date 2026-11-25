@@ -1,4 +1,5 @@
 const pendingHelpTaskIds = new Set()
+const tabButtons = [...document.querySelectorAll('[role="tab"]')]
 const taskStatusDefinitions = [
   { value: 'NotStarted', label: 'Not started', color: '#858585' },
   { value: 'InProgress', label: 'In progress', color: '#3794ff' },
@@ -9,6 +10,126 @@ const historySeriesDefinitions = [
   { key: 'Done', color: '#4ec9b0' },
   { key: 'Blocked', color: '#f14c4c' }
 ]
+
+function activateTab(activeTabButton) {
+  for (const tabButton of tabButtons) {
+    const isActive = tabButton === activeTabButton
+    const tabPanel = document.getElementById(tabButton.getAttribute('aria-controls'))
+
+    tabButton.setAttribute('aria-selected', String(isActive))
+    tabButton.tabIndex = isActive ? 0 : -1
+    tabPanel.hidden = !isActive
+  }
+}
+
+function handleTabKeydown(event) {
+  const activeTabIndex = tabButtons.indexOf(event.currentTarget)
+  let nextTabIndex
+
+  if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+    nextTabIndex = (activeTabIndex + 1) % tabButtons.length
+  } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+    nextTabIndex = (activeTabIndex - 1 + tabButtons.length) % tabButtons.length
+  } else if (event.key === 'Home') {
+    nextTabIndex = 0
+  } else if (event.key === 'End') {
+    nextTabIndex = tabButtons.length - 1
+  } else {
+    return
+  }
+
+  event.preventDefault()
+  tabButtons[nextTabIndex].focus()
+  activateTab(tabButtons[nextTabIndex])
+}
+
+function setupTabs() {
+  for (const tabButton of tabButtons) {
+    tabButton.addEventListener('click', () => activateTab(tabButton))
+    tabButton.addEventListener('keydown', handleTabKeydown)
+  }
+}
+
+function createPromptCard(prompt) {
+  const promptButton = document.createElement('button')
+  promptButton.className = 'prompt-card'
+  promptButton.type = 'button'
+
+  const promptTitle = document.createElement('span')
+  promptTitle.className = 'prompt-card-title'
+  promptTitle.textContent = prompt.title
+
+  const promptDescription = document.createElement('span')
+  promptDescription.className = 'prompt-card-description'
+  promptDescription.textContent = prompt.description
+
+  promptButton.append(promptTitle, promptDescription)
+  promptButton.addEventListener('click', () =>
+    requestPredefinedPrompt(prompt.id, promptButton)
+  )
+
+  return promptButton
+}
+
+async function loadPromptCards() {
+  const promptList = document.querySelector('#prompt-list')
+
+  try {
+    const response = await fetch('/api/prompts')
+    const promptCards = await response.json()
+
+    if (!response.ok) {
+      throw new Error(promptCards.error || `Request failed (${response.status})`)
+    }
+
+    if (!Array.isArray(promptCards) || !promptCards.every(prompt =>
+      prompt &&
+      typeof prompt.id === 'string' &&
+      typeof prompt.title === 'string' &&
+      typeof prompt.description === 'string'
+    )) {
+      throw new Error('Received an invalid prompt list')
+    }
+
+    promptList.replaceChildren(...promptCards.map(createPromptCard))
+  } catch (error) {
+    const errorMessage = error instanceof Error ? error.message : 'Unknown prompt list error'
+    promptList.textContent = `Unable to load prompts: ${errorMessage}`
+  }
+}
+
+async function requestPredefinedPrompt(promptId, button) {
+  const promptStatus = document.querySelector('#prompt-status')
+  const promptTitle = button.querySelector('.prompt-card-title')
+  const originalTitle = promptTitle.textContent
+
+  button.disabled = true
+  button.setAttribute('aria-busy', 'true')
+  promptTitle.textContent = 'Sending...'
+  promptStatus.textContent = `Sending "${originalTitle}" to Copilot...`
+
+  try {
+    const response = await fetch('/api/prompt', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ promptId })
+    })
+    const responseData = await response.json()
+
+    if (!response.ok) {
+      throw new Error(responseData.error || `Request failed (${response.status})`)
+    }
+
+    promptStatus.textContent = `"${originalTitle}" sent to Copilot.`
+  } catch (error) {
+    const errorMessage = error instanceof Error ? error.message : 'Unknown prompt request error'
+    promptStatus.textContent = `Unable to send prompt: ${errorMessage}`
+  } finally {
+    button.disabled = false
+    button.removeAttribute('aria-busy')
+    promptTitle.textContent = originalTitle
+  }
+}
 
 function countTasksByStatus(tasks) {
   const taskCounts = new Map(
@@ -336,4 +457,6 @@ function connectToUpdates() {
   }
 }
 
+setupTabs()
+void loadPromptCards()
 connectToUpdates()

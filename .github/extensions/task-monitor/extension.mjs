@@ -10,7 +10,7 @@ async function getDashboardServer(instanceId) {
 
   if (!serverPromise) {
     serverPromise = startDashboardServer({
-      sendHelpPrompt: prompt => copilotSession.send({ prompt })
+      sendPrompt: prompt => copilotSession.send({ prompt })
     })
     dashboardServersByInstance.set(instanceId, serverPromise)
   }

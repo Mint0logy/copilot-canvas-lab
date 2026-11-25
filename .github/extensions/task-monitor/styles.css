@@ -61,6 +61,31 @@ button:focus-visible {
   color: var(--text-muted);
 }
 
+.tab-list {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tab-button {
+  padding: 10px 14px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.tab-button:hover,
+.tab-button[aria-selected="true"] {
+  color: #ffffff;
+}
+
+.tab-button[aria-selected="true"] {
+  border-bottom-color: #3794ff;
+}
+
 .summary-cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -104,6 +129,71 @@ button:focus-visible {
 .panel {
   min-width: 0;
   padding: 20px;
+}
+
+.prompts-panel > h2 {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.prompt-intro {
+  margin: 8px 0 20px;
+  color: var(--text-muted);
+}
+
+.prompt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.prompt-card {
+  display: flex;
+  min-height: 140px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #1e1e1e;
+  color: #cccccc;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color 120ms ease,
+    background-color 120ms ease,
+    transform 120ms ease;
+}
+
+.prompt-card:hover:not(:disabled) {
+  transform: translateY(-2px);
+  border-color: #3794ff;
+  background: #2a2d2e;
+}
+
+.prompt-card:disabled {
+  color: var(--text-muted);
+  cursor: wait;
+}
+
+.prompt-card-title {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.prompt-card-description {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+#prompt-status {
+  min-height: 1.25em;
+  margin: 16px 0 0;
+  color: var(--text-muted);
+  font-size: 13px;
 }
 
 #status-chart {

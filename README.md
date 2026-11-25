@@ -26,6 +26,10 @@ Blocked tasks have a **Help** button. It sends the task title to the current
 Copilot session as untrusted data and, after the prompt is accepted, changes
 that task to `InProgress` while preserving `StartedAt` and clearing `FinishedAt`.
 
+The **Prompt library** tab provides five predefined, read-only analysis prompts.
+Selecting a card sends its allowlisted ID to the server, which sends the
+corresponding prompt to the current Copilot session.
+
 The extension is in `.github\extensions\task-monitor\`. It uses only Node.js
 built-ins and the Copilot SDK supplied by the host; no project dependencies are
 required. The generated `runtime\stats.json` is intentionally ignored by Git.
@@ -52,14 +56,16 @@ flowchart TB
   STATS["Shared data<br/>runtime/stats.json<br/>tasks + History + updatedAt"]:::file
   WORKER["2. Worker - scripts/worker.ps1<br/>Every 60s: Enter-/Exit-StatsFileLock()<br/>Update-StatsFile() changes status and History (max 480)<br/>Save-StatsFile(): temp file + File.Replace()"]:::service
   EXTENSION["3. Extension lifecycle<br/>extension.json, extension.mjs<br/>joinSession(); createCanvas(); open(instanceId)<br/>onClose() stops its server"]:::service
-  SERVER["4. Local server - server.mjs<br/>startDashboardServer() on 127.0.0.1:ephemeral port<br/>Allowlisted assets; GET /events; POST /api/help"]:::service
+  SERVER["4. Local server - server.mjs<br/>startDashboardServer() on 127.0.0.1:ephemeral port<br/>Assets; GET /events and /api/prompts; POST /api/help and /api/prompt"]:::service
   WATCHER["Watch stats.json<br/>watch(); 150ms debounce<br/>readStatsFile(); broadcastEvent()"]:::service
   ASSETS["Serve canvas.html, styles.css, canvas.js"]:::service
   SSE["SSE: initial snapshot + live updates"]:::service
-  CANVAS["5. Canvas page<br/>EventSource('/events'); renderDashboard()<br/>Cards, status pie, history chart, active tasks"]:::page
+  CANVAS["5. Canvas page<br/>EventSource('/events'); renderDashboard()<br/>Dashboard cards/charts/tasks + Prompt library tab"]:::page
   HELP_REQUEST["Blocked task Help button<br/>fetch('/api/help') with taskId"]:::page
-  VALIDATE["POST checks origin, JSON and body size<br/>sendHelpForBlockedTask(): validate taskId/status; deduplicate"]:::service
-  PROMPT["Quote task Name with JSON.stringify<br/>Mark title as untrusted data"]:::service
+  PROMPT_TAB["Five rounded prompt cards<br/>GET /api/prompts; POST /api/prompt with promptId"]:::page
+  VALIDATE["/api/help: origin, JSON, size, taskId/status<br/>sendHelpForBlockedTask(); deduplicate"]:::service
+  HELP_PROMPT["Help prompt: JSON.stringify task Name<br/>Mark title as untrusted data"]:::service
+  PROMPT_ALLOWLIST["/api/prompt: validate promptId<br/>Send only predefined prompt text"]:::service
   SESSION["Current Copilot session<br/>copilotSession.send({ prompt })"]:::copilot
   UPDATE["withStatsFileLock(): after prompt, re-read<br/>If still Blocked: set InProgress<br/>Keep StartedAt; clear FinishedAt; append History"]:::service
   WRITE["writeStatsFile()<br/>Unique temp file, then atomic rename"]:::service
@@ -71,8 +77,9 @@ flowchart TB
   EXTENSION -->|open Canvas| SERVER
   SERVER --> ASSETS --> CANVAS
   STATS --> WATCHER --> SSE --> CANVAS
-  CANVAS --> HELP_REQUEST --> SERVER
-  SERVER --> VALIDATE --> PROMPT --> SESSION --> UPDATE --> WRITE --> STATS
+  CANVAS --> HELP_REQUEST --> SERVER --> VALIDATE --> HELP_PROMPT --> SESSION
+  CANVAS --> PROMPT_TAB --> SERVER --> PROMPT_ALLOWLIST --> SESSION
+  SESSION --> UPDATE --> WRITE --> STATS
   WRITE --> RESULT --> CANVAS
 
 ```
